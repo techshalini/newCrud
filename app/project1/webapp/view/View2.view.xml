@@ -1,0 +1,28 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="project1.controller.View2"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+   <form:SimpleForm id="ghgg" >
+		<Label id="_IDGenLabel1" text="node_key" labelFor="input-a" />
+		<Input id="input-a" required="true" />
+
+		<Label id="_IDGenLabel2"
+			text="BP_Role"
+			labelFor="input-b"
+			design="Bold" />
+		<Input id="input-b" />
+
+		<Label id="_IDGenLabel3" text="Fax_Number" labelFor="input-c" />
+		<Input id="input-c" />
+
+        <Label id="_IDGenLabel36" text="phone_number" labelFor="input-o" />
+		<Input id="input-d" />
+
+        <Label id="_IDGenLabel39" text="email_no" labelFor="input-p" />
+		<Input id="input-g" />
+
+		<Label id="_IDGenLabel397" text="company_name" labelFor="input-i" />
+		<Input id="input-u" />
+        </form:SimpleForm>
+        <Button id="_IDGenButton1" text="submit" press="onPress"/>
+</mvc:View>

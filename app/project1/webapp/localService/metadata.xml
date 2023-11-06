@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="myservice" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="businesspartner" EntityType="myservice.businesspartner"/>
+            </EntityContainer>
+            <EntityType Name="businesspartner">
+                <Key>
+                    <PropertyRef Name="Node_Key"/>
+                </Key>
+                <Property Name="Node_Key" Type="Edm.String" MaxLength="32" Nullable="false"/>
+                <Property Name="BP_Role" Type="Edm.String" MaxLength="20"/>
+                <Property Name="Email_Address" Type="Edm.String" MaxLength="125"/>
+                <Property Name="Phone_Number" Type="Edm.String" MaxLength="16"/>
+                <Property Name="Fax_Number" Type="Edm.String" MaxLength="20"/>
+                <Property Name="BP_ID" Type="Edm.String" MaxLength="18"/>
+                <Property Name="Company_Name" Type="Edm.String" MaxLength="120"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
